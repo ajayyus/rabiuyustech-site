@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><title>Form registration</title></head>
+  <body>
+    <!-- Registers Netlify Forms at build time. The React forms submit here via fetch. -->
+    <form name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="inquiry" />
+      <input name="name" />
+      <input name="email" type="email" />
+      <input name="store_url" />
+      <input name="platform" />
+      <input name="interest" />
+      <input name="package" />
+      <input name="addons" />
+      <input name="budget" />
+      <textarea name="challenge"></textarea>
+      <textarea name="details"></textarea>
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+    <form name="review" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="review" />
+      <input name="name" />
+      <input name="email" type="email" />
+      <input name="country" />
+      <input name="rating" />
+      <textarea name="review"></textarea>
+      <input name="consent" />
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
